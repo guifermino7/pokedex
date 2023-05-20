@@ -1,30 +1,38 @@
 body {
     font-family: "Roboto", sans-serif;
-    max-width: 1280px;
+    max-width: 100%;
     margin: 0 auto;
-    background-color: #b44545;
+    background-image: url(https://wallpaperaccess.com/full/1089608.png);
+    background-color: #cccccc;
+    background-position: center;
+    background-repeat: no-repeat, repeat;
+    background-size: cover;
     color: #333333;
 }
 
 body.modoEscuro {
-    background-color: #212121;
-    color: #4F4F4F;
+    background-image: url(https://wallpaperaccess.com/full/1719829.png);
+    background-color: #cccccc;
+    color: #333333;
 }
 
 header {
     display: flex;
-    justify-content: space-around;
-    padding: 25px;
+    justify-content: space-evenly;
+    padding: 10px;
 }
 
-
-header .logo,
+header .pokebola,
 header .imagemBotao {
     width: 50px;
     height: 50px;
     transition: 0.2s ease-in-out;
 }
 
+.pokemon-logo {
+    width: 10px;
+    height: 10px;
+}
 
 header #botaoAlterarTema {
     background: none;
@@ -32,7 +40,7 @@ header #botaoAlterarTema {
     cursor: pointer;
 }
 
-header .logo:hover,
+header .pokebola:hover,
 header .imagemBotao:hover,
 main .cartaoPokemon:hover {
     transform: scale(1.05);
@@ -41,6 +49,7 @@ main .cartaoPokemon:hover {
 
 main {
     padding: 25px;
+    text-align: center;
 }
 
 .listaPokemon {
@@ -51,7 +60,7 @@ main {
 }
 
 .cartaoPokemon {
-    background-color: #E0FFFF;
+    background-color: rgba(224, 255, 255, 0.7);
     width: 200px;
     padding: 15px;
     display: flex;
@@ -88,6 +97,21 @@ main .cartaoPokemon .gif {
     height: 75px;
 }
 
+main .gif-kakuna {
+    width: 60px;
+    height: 75px;
+}
+
+main .gif-wigglytuff, .gif-oddish, .gif-venonat {
+    width: 50px;
+    height: 75px;
+}
+
+main .gif-venomoth {
+    width: 120px;
+    height: 75px;
+}
+
 main .cartaoPokemon .tipos {
     display: flex;
     gap: 15px;
@@ -103,7 +127,7 @@ main .cartaoPokemon .tipo {
 }
 
 .veneno {
-    background-color: #df67ddfb;
+    background-color: #b97fc9;
 }
 
 .fogo {
@@ -116,6 +140,26 @@ main .cartaoPokemon .tipo {
 
 .inseto {
     background-color: #a6b91a;
+}
+
+.voador {
+    background-color: #30a7d7;
+}
+
+.normal {
+    background-color: #a4acaf;
+}
+
+.eletrico {
+    background-color: #f7de3f;
+}
+
+.terra {
+    background-color: #ab9842;
+}
+
+.fada {
+    background-color: #fdb9e9;
 }
 
 main .descricao {
